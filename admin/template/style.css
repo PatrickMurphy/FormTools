@@ -1,0 +1,183 @@
+@charset "utf-8";
+body {
+	font: 100%/1.4 Verdana, Geneva, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #33393c;
+}
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+a {
+	text-decoration: none;
+	color:#ddd;
+	color: #208beb;
+}
+a:hover {
+	color:#fff;	
+}
+
+a img {border: none;}
+.container {
+	width: 100%;
+	background: #FFFFFF url(images/sidebar_bg.jpg) repeat-y;
+}
+header {
+	background: #D0D0D0 url('images/header_bg.jpg') no-repeat right top;
+	height:85 px;
+	margin:0; padding:0;
+}
+header img {
+	display:block;
+	padding-left:20px;	
+}
+.userbox{
+	float:right;
+	padding-right:35px;
+	color:#fff;
+	margin-top:12px;
+	font-size:105%;	
+}
+#topbar {
+	background:url(images/header_bar_bg.jpg);
+	height:50px;	
+	border-bottom:1px solid #b6b6b6;
+}
+/* ~~ These are the columns for the layout. ~~ */
+.sidebar1 {
+	float: left;
+	width: 200px;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 800px;
+	float: left;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol {
+	padding: 0 15px 15px 40px;
+}
+/* ~~ Content Heading styles ~~ */
+.content h1 {
+	font: bold italic 2.0em Georgia, "Times New Roman", Times, serif;
+  	color: #1d5e98;
+ 	margin: 0px 0px 10px 15px;
+  	padding: 0px 0px 1px 0px;
+ 	border-bottom: 1px solid #1d5e98;	
+}
+.content h2 {
+	font: bold 1.2em Arial, Tahoma, sans-serif;
+	color: #333;
+	margin: 0px;
+	padding: 12px 0px 12px 15px;
+}
+/* ~~ Content Form styles ~~ */
+form {
+	margin-left:15px;	
+}
+.form {
+	width:40%;
+}
+.form label {
+	float: left;	
+	padding:6px;
+	clear:both;
+}
+.form input,.form select,.form textarea {
+	float: right;	
+}
+.form input[type=submit]{clear:both}
+.content input, .content select, .content textarea, .content button {
+	padding:6px;
+	background:#fff;
+	border: 1px solid #ccc;
+	color:#666;
+}
+.content input:focus, .content select:focus, .content textarea:focus, .content button:focus {
+	border:1px solid #a3a3a3;
+	color:#333;
+}
+.success {
+	border:1px solid #5f7f4d;
+	background: #e6ede2 url(images/success.jpg) no-repeat right center;
+}
+.error {
+	border:1px solid #cc0000;
+	background: #ffd0d0 url(images/error.jpg) no-repeat right center;
+}
+.content input[type=submit]{
+	background:#5c95bd;
+	color:#fff;
+	border-color:#006dbb;
+}
+/* ~~ Content Table styles ~~ */
+table {
+	margin-left:15px;
+	width:95%;
+	border-collapse:collapse;
+}
+th {
+	background:#7b7b7b;	
+	text-align:left;
+	color:#fff;
+}
+th,td {
+	padding-left:3px;
+}
+tr {
+	line-height:200%;	
+}
+tr:hover, tr:nth-child(odd):hover {
+	background:#b6d1e8;
+}
+tr:nth-child(odd){
+	background:#d9e6f1;
+}
+/* ~~ The navigation list styles ~~ */
+nav ul {
+	list-style: none;
+	border-top: 1px solid #666;
+	margin-bottom: 15px;
+}
+nav ul li {
+	border-bottom: 1px solid #333;
+}
+nav ul a, nav ul a:visited {
+	padding: 10px 5px 10px 15px;
+	display: block;
+	width: 180px;
+	background: url(images/nav_bg.jpg);
+	text-decoration: none;
+	color:#EEE;
+}
+nav ul a:hover, nav ul a:active, nav ul a:focus, .current a {
+	background: url(images/focus_nav.jpg);
+}
+
+/* ~~ The footer ~~ */
+footer {
+	padding: 10px 0;
+	background: #42413C;
+	position: relative;
+	clear: both;
+	color:#666;
+	text-align:center;
+}
+footer p {
+	display:inline;
+}
+
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, nav, article, figure {
+	display: block;
+}
